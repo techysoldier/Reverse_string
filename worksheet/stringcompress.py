@@ -13,36 +13,38 @@
 
 
 
-from bz2 import compress
-import string
+# from bz2 import compress
+# import string
 
-string = input('')
-def compress_string(string): 
-    new_string = "" #tracks new string 
-    count = 1  #tracks letter count 
-    #add first character
-    new_string += string[0]
-    for i in range (len(string)-1):
-        if string[i] == string[i+1]:
-            count += 1 #count by one 
-    else: 
-            if count == 1: 
-            #add next letter 
-                new_string += "1"
-            new_string += string[i +1]
-            if count > 1:
-                new_string += str(count)
-            #add next letter 
-            new_string += string[i+1]
-            count = 1
-            if count > 1: 
-                new_string += str(count)
-            else:
-             new_string += "1"
-             return new_string
-print(string)
+# string = input('')
+# def compress_string(string): 
+#     new_string = "" #tracks new string 
+#     count = 1  #tracks letter count 
+#     #add first character
+#     new_string += string[0]
+#     for i in range (len(string)-1):
+#         if string[i] == string[i+1]:
+#             count += 1 #count by one 
+#     else: 
+#             if count == 1: 
+#             #add next letter 
+#                 new_string += "1"
+#             new_string += string[i +1]
+#             if count > 1:
+#                 new_string += str(count)
+#             #add next letter 
+#             new_string += string[i+1]
+#             count = 1
+#             if count > 1: 
+#                 new_string += str(count)
+#             else:
+#              new_string += "1"
+#              return new_string
+# print(string)
 
-    
+
+
+# def compress_string(repeat_string):     
 #     for i in range(len(repeat_string)): #as long as og string
 #         j = i #tracks letter next to 
 #         j += 1 #adds one 
